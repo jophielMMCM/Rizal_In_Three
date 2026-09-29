@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.index-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.top-bar {
+  text-align: center;
+  padding-bottom: 25px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.top-bar::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200%;
+  height: 1px;
+  background-color: rgba(255, 246, 207, 0.15);
+}
+
+.top-bar h4 {
+  font-family: "Afacad Flux", sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+.index-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.part-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-link {
+  color: #FFF6CF;
+  text-decoration: none;
+  font-family: "Instrument Serif", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.chapter-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.chapter-links .nav-link {
+  font-family: "Afacad Flux", sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  opacity: 0.6;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.section-link:hover,
+.chapter-links .nav-link:hover{
+  opacity: 1;
+  transform: scale(1.03);
+}
