@@ -137,3 +137,11 @@ body {
   right: 20px;
   transform: translateY(-50%) rotate(135deg);
 }
+
+.reference {
+  line-height: 2.0;
+  margin-bottom: 24px;
+  margin-top: 0;
+  text-indent: -0.5in;
+  text-align: left;
+}
